@@ -5,63 +5,86 @@
     <title>Tailwind Basics</title>
 </head>
 <body>
-    <div class="flex flex-row-reverse bg-red-500 w-auto">
-        <div class="h-20 w-20 bg-yellow-500">1</div>
-        <div class="h-20 w-20 bg-blue-500">2</div>
-        <div class="h-20 w-20 bg-green-500">3</div>
-    </div>
-    <div class="flex flex-wrap bg-yellow-500 w-auto">
-        <div class="h-20 w-96 bg-yellow-500">1</div>
-        <div class="h-20 w-96 bg-blue-500">2</div>
-        <div class="h-20 w-96 bg-green-500">3</div>
-    </div>
-    <div class="grid w-auto gap-4">
-        <div class="w-auto bg-red-500 grid grid-cols-3 gap-x-4">
-            <div class="flex-none h-20 bg-yellow-500">1</div>
-            <div class="flex-none h-20 bg-blue-500">2</div>
-            <div class="flex-none h-20 bg-green-500">3</div>
-            <div class="flex-none h-20 bg-yellow-500">4</div>
-            <div class="flex-none h-20 bg-blue-500">5</div>
-            <div class="flex-none h-20 bg-green-500">6</div>
-            <div class="flex-none h-20 bg-yellow-500">7</div>
-            <div class="flex-none h-20 bg-blue-500">8</div>
-            <div class="flex-none h-20 bg-green-500">9</div>
+    <div class="hidden">
+        <div class="flex flex-row-reverse bg-red-500 w-auto">
+            <div class="h-20 w-20 bg-yellow-500">1</div>
+            <div class="h-20 w-20 bg-blue-500">2</div>
+            <div class="h-20 w-20 bg-green-500">3</div>
         </div>
-        <div class="w-auto bg-red-500 grid grid-rows-3 grid-flow-col gap-4">
-            <div class="row-span-2 flex-none h-20 bg-yellow-500">1</div>
-            <div class="flex-none h-20 bg-blue-500">2</div>
-            <div class="flex-none h-20 bg-green-500">3</div>
-            <div class="flex-none h-20 bg-yellow-500">4</div>
-            <div class="flex-none h-20 bg-blue-500">5</div>
-            <div class="flex-none h-20 bg-green-500">6</div>
-            <div class="flex-none h-20 bg-yellow-500">7</div>
-            <div class="flex-none h-20 bg-blue-500">8</div>
-            <div class="flex-none h-20 bg-green-500">9</div>
+        <div class="flex flex-wrap bg-yellow-500 w-auto">
+            <div class="h-20 w-96 bg-yellow-500">1</div>
+            <div class="h-20 w-96 bg-blue-500">2</div>
+            <div class="h-20 w-96 bg-green-500">3</div>
         </div>
-        <div class="p-5 m-5 w-auto bg-red-500 grid grid-cols-3 grid-flow-row gap-4 justify-items-center">
-            <div class="mt-4 flex-none h-20 w-20 bg-yellow-500 text-right text-blue-500">1</div>
-            <div class="flex-none h-20 w-20 bg-blue-500">2</div>
-            <div class="flex-none h-20 w-20 bg-green-500">3</div>
-            <div class="flex-none h-20 w-20 bg-yellow-500">4</div>
-            <div class="flex-none h-20 bg-blue-500 justify-self-stretch text-center text-black text-opacity-20">5</div>
-            <div class="flex-none h-20 w-20 bg-green-500">6</div>
-            <div class="p-5 flex-none h-20 w-20 bg-yellow-500">7</div>
-            <div class="flex-none h-20 w-20 bg-blue-500">8</div>
-            <div class="flex-none h-20 w-20 bg-green-500 justify-self-end">9</div>
+        <div class="grid w-auto gap-4">
+            <div class="w-auto bg-red-500 grid grid-cols-3 gap-x-4">
+                <div class="flex-none h-20 bg-yellow-500">1</div>
+                <div class="flex-none h-20 bg-blue-500">2</div>
+                <div class="flex-none h-20 bg-green-500">3</div>
+                <div class="flex-none h-20 bg-yellow-500">4</div>
+                <div class="flex-none h-20 bg-blue-500">5</div>
+                <div class="flex-none h-20 bg-green-500">6</div>
+                <div class="flex-none h-20 bg-yellow-500">7</div>
+                <div class="flex-none h-20 bg-blue-500">8</div>
+                <div class="flex-none h-20 bg-green-500">9</div>
+            </div>
+            <div class="w-auto bg-red-500 grid grid-rows-3 grid-flow-col gap-4">
+                <div class="row-span-2 flex-none h-20 bg-yellow-500">1</div>
+                <div class="flex-none h-20 bg-blue-500">2</div>
+                <div class="flex-none h-20 bg-green-500">3</div>
+                <div class="flex-none h-20 bg-yellow-500">4</div>
+                <div class="flex-none h-20 bg-blue-500">5</div>
+                <div class="flex-none h-20 bg-green-500">6</div>
+                <div class="flex-none h-20 bg-yellow-500">7</div>
+                <div class="flex-none h-20 bg-blue-500">8</div>
+                <div class="flex-none h-20 bg-green-500">9</div>
+            </div>
+            <div class="p-5 m-5 w-auto bg-red-500 grid grid-cols-3 grid-flow-row gap-4 justify-items-center">
+                <div class="mt-4 flex-none h-20 w-20 bg-yellow-500 text-right text-blue-500">1</div>
+                <div class="flex-none h-20 w-20 bg-blue-500">2</div>
+                <div class="flex-none h-20 w-20 bg-green-500">3</div>
+                <div class="flex-none h-20 w-20 bg-yellow-500">4</div>
+                <div class="flex-none h-20 bg-blue-500 justify-self-stretch text-center text-black text-opacity-20">5</div>
+                <div class="flex-none h-20 w-20 bg-green-500">6</div>
+                <div class="p-5 flex-none h-20 w-20 bg-yellow-500">7</div>
+                <div class="flex-none h-20 w-20 bg-blue-500">8</div>
+                <div class="flex-none h-20 w-20 bg-green-500 justify-self-end">9</div>
+            </div>
+            <div class="mx-auto p5 text-2xl font-bold uppercase">This is a heading</div>
+            <div class="mx-auto p5 italic font-extralight capitalize">This is a heading too</div>
         </div>
-        <div class="mx-auto p5 text-2xl font-bold uppercase">This is a heading</div>
-        <div class="mx-auto p5 italic font-extralight capitalize">This is a heading too</div>
+        <button class="bg-blue-500 m-20 p-5 text-white rounded border-r-4 border-b-4 border-blue-200  border-opacity-50">Text</button>
+        <button class="bg-blue-500 mx-auto p-5 text-white rounded-l-full">Text</button>
+        <div class="bg-blue-100 mx-auto p-5 text-white rounded-full">
+            <input placeholder="Type stuff" class="bg-gray-500 focus:bg-gray-800">
+            <button class="bg-blue-500 mx-auto p-5 text-white rounded-l-full shadow-xl hover:rounded-full hover:bg-blue-700">Text</button>
+        </div>
+        <div class="group bg-yellow-600">
+            <h1 class="m-5 text-5xl md:text-blue-600 lg:text-blue-300 group-hover:text-black">Heading 1</h1>
+            <h1 class="m-5 text-5xl md:text-blue-600 lg:text-blue-300 group-hover:text-white">Heading 2</h1>
+            <a href="" class="m-5">Link</a>
+        </div>
     </div>
-    <button class="bg-blue-500 m-20 p-5 text-white rounded border-r-4 border-b-4 border-blue-200  border-opacity-50">Text</button>
-    <button class="bg-blue-500 mx-auto p-5 text-white rounded-l-full">Text</button>
-    <div class="bg-blue-100 mx-auto p-5 text-white rounded-full">
-        <input placeholder="Type stuff" class="bg-gray-500 focus:bg-gray-800">
-        <button class="bg-blue-500 mx-auto p-5 text-white rounded-l-full shadow-xl hover:rounded-full hover:bg-blue-700">Text</button>
-    </div>
-    <div class="group bg-yellow-600">
-        <h1 class="m-5 text-5xl md:text-blue-600 lg:text-blue-300 group-hover:text-black">Heading 1</h1>
-        <h1 class="m-5 text-5xl md:text-blue-600 lg:text-blue-300 group-hover:text-white">Heading 2</h1>
-        <a href="" class="m-5">Link</a>
+    <div>
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-6xl mx-auto px-2">
+                <div class="flex justify-start">
+                    <div class="flex w-20 h-20 mr-32">
+                        <a href="#" class="flex py-4">
+                            <img class="bg-contain" src="images/logo.svg" alt="Supposed to be home icon">
+                            <span class="font-semibold text-lg text-gray-500">Prime Properties</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-2 items-center">
+                        <a href="" class="py-6 px-2 text-green-500 font-semibold border-green-500 border-b-4">Home</a>
+                        <a href="" class="py-7 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                        <a href="" class="py-7 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                        <a href="" class="py-7 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
     </div>
 </body>
 </html>

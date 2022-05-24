@@ -12,9 +12,34 @@
     .special-button {
         @apply text-white bg-indigo-500 p3;
     }
+
+    .light-theme {
+        @apply text-black bg-white
+    }
+
+    .darkt-theme {
+        @apply text-white bg-gray-700
+    }
+
+    .new-theme {
+        @apply text-yellow-600 bg-red
+    }
+
+    .blue-theme {
+        @apply text-white bg-blue
+    }
 }
 
 @layer utilities {
+
+    .bg-red {
+        background: linear-gradient(to bottom right, red, yellow);
+    }
+
+    .bg-blue {
+        background: linear-gradient(to left, #304369, #051636);
+    }
+
     .text-green-500 {
         color: blue;
     }
